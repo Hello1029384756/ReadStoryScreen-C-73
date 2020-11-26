@@ -59,7 +59,7 @@ render() {
       value = {this.state.search}
       />
       <FlatList
-        data={this.state.search === "" ?  this.state.allStories: this.state.dataSource}
+        data={this.state.search ?  this.state.allStories: this.state.dataSource}
         renderItem={({ item }) => (
         <View style={styles.storyInfo}>
           <Text>  Title: {item.title}</Text>
